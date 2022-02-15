@@ -1,0 +1,202 @@
+/*------------------//general//-------------------*/
+html,body{
+	color: white;
+	height: 100vh;
+}
+.all{
+	background-color: #121212;
+	opacity: 100%;
+	padding: 30px;
+	min-height: 93vh;
+	display: flex;
+	align-content: center;
+}
+.container-main{
+	max-height: 90vh;
+	color: rgba(255, 255, 255, 0.78);
+	background-color: rgba(255, 255, 255, 0.10);
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+}
+/*------------------------------------------------*/
+
+
+/*------------------//profile//-------------------*/
+.userImg{
+	width: auto;
+	max-height: 30vh;
+	border-radius: 50px;
+}
+.userImgDiv{
+	opacity: 100%;
+
+    /* temp */
+}
+.dataContainer{
+	height: 11vh;
+	font-size: 100%;
+	padding: 0 25px 15px 25px;
+}
+.data{
+	background-color: rgba(255, 255, 255, 0.10);
+	user-select: auto;
+	margin-top: 0;
+	font-size: 30px;
+	text-align: right;
+	padding: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.labels{
+	background-color: rgba(255, 255, 255, 0.20);
+	margin-top: 0;
+	font-size: 30px;
+	padding: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+/*------------------------------------------------*/
+
+
+/*------------------//navbar//--------------------*/
+.navbar{
+	height: 7vh;
+	color: rgba(255, 255, 255, 0.88);
+	background-color: rgba(0, 0, 0, 0.80);
+	max-width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+.navbar>div{
+	text-align: center;
+}
+.imgs{
+	border-radius: 50px;
+}
+.action{
+	justify-content: center;
+	flex-direction: column;
+	display: flex;
+	height: 100%;
+	font-size: 2vh;
+}
+.action:hover{
+	background-color: rgba(255, 255, 255, 0.10);
+	transition: 0.1s;
+}
+.action:active{
+	background-color: rgba(255, 255, 255, 0.25);
+	transition: 0.05s;
+}
+.logoImg{
+	width: auto;
+	max-height: 6vh;
+}
+.logo:active{
+	transform: rotate(360deg);
+	transition: 1s
+}
+/*------------------------------------------------*/
+
+
+
+/*------------------//modal//---------------------*/
+.modal{
+	background-color: rgba(18, 18, 18, 0.20);
+}
+.modal-content{
+	background-color: #121212;
+}
+.modal-header{
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 0;
+}
+.modal-body{
+	background-color: rgba(255, 255, 255, 0.08);
+}
+.modal-footer{
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 0;
+}
+.inputContainer{
+	display: flex;
+	flex-direction: column;
+	height: 11vh;
+	font-size: 100%;
+	padding: 0 25px 15px 25px;
+}
+.modalInputs{
+	border-radius: 5px;
+	border: 2px solid rgba(255, 255, 255, 0.05);
+	background-color: rgba(255, 255, 255, 0.08);
+	cursor: pointer;
+	height: 100%;
+	width: 50%;
+	outline: none;
+	transition: 0.5s;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	user-select: auto;
+    display: flex;
+    align-items: center;
+}
+.fileInput{
+	display: none;
+}
+.fileFilled{
+	width: 100%;
+}
+.rowBtn{
+	display: flex;
+	justify-content: center;
+}
+.rowBtn>button{
+	width: 50%;
+}
+.modalInputs:focus,.modalInputs:active,.modalInputs:hover{
+	width: 100%;
+}
+.signText{
+	padding: 0;
+	margin: 10px 0;
+}
+.signDivs{
+	padding: 3vh 20px;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+.btn{
+	color:white;
+	background-color: rgba(255, 255, 255, 0.25);
+}
+/*------------------------------------------------*/
+
+
+
+/*---------//responsivness media queries//--------*/
+@media screen and (max-width: 1100px){
+	.action{
+		justify-content: center;
+		flex-direction: column;
+		display: flex;
+		height: 100%;
+		font-size: 2vh;
+		width: 25vw;
+	}
+	.container-main{
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		padding: 15px;
+	}
+	.all{
+		padding: 30px;
+		min-height: 93vh;
+		height: max-content
+	}
+	.dataContainer{
+		height: 50%
+	}
+}
+/*------------------------------------------------*/

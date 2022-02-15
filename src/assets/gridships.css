@@ -1,0 +1,227 @@
+/*------------------//general//-------------------*/
+body{
+	color: white;
+}
+.all{
+	height: 100vh;
+	background-color: #121212;
+	opacity: 100%;
+	user-select: none;
+}
+.container-main{
+	height: 83vh;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	color: rgba(255, 255, 255, 0.78);
+	background-color: rgba(255, 255, 255, 0.10);
+	border-radius: 8px;
+	max-width: 95%;
+	padding: 15px;
+}
+/*------------------------------------------------*/
+
+
+
+/*------------------//modal//---------------------*/
+.modal{
+	background-color: rgba(18, 18, 18, 0.20);
+}
+.modal-content{
+	background-color: #121212;
+}
+.modal-header{
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 0;
+}
+.modal-body{
+	background-color: rgba(255, 255, 255, 0.08);
+}
+.modal-footer{
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 0;
+}
+.inputContainer{
+	display: flex;
+	flex-direction: column;
+	height: 11vh;
+	font-size: 100%;
+	padding: 0 25px 15px 25px;
+}
+.modalInputs{
+	border-radius: 5px;
+	border: 2px solid rgba(255, 255, 255, 0.05);
+	background-color: rgba(255, 255, 255, 0.08);
+	cursor: pointer;
+	height: 100%;
+	width: 50%;
+	outline: none;
+	transition: 0.5s;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	user-select: auto;
+}
+.modalInputs:focus{
+	width: 100%;
+}
+/*------------------------------------------------*/
+
+
+
+/*------------------//navbar//--------------------*/
+.navbar{
+	height: 7vh;
+	opacity: 100%;
+	color: rgba(255, 255, 255, 0.88);
+	background-color: rgba(255, 255, 255, 0.10);
+	max-width: 100vw;
+	margin: 0;
+	padding: 0;
+}
+.navbar>div{
+	text-align: center;
+}
+.imgs{
+	border-radius: 50px;
+	user-select: none;
+}
+.action{
+	justify-content: center;
+	flex-direction: column;
+	display: flex;
+	height: 100%;
+	font-size: 2vh;
+	cursor: pointer;
+}
+.action:hover{
+	background-color: rgba(255, 255, 255, 0.10);
+	transition: 0.1s;
+}
+.action:active{
+	background-color: rgba(255, 255, 255, 0.25);
+	transition: 0.05s;
+}
+.logoImg{
+	width: auto;
+	max-height: 6vh;
+}
+.logo:active{
+	transform: rotate(360deg);
+	transition: 1s
+}
+/*------------------------------------------------*/
+
+
+
+/*-------------------//actions//------------------*/
+.left{
+	padding: 30px 120px;
+	border-right: solid 3px rgba(255, 255, 255, 0.75);
+	margin:0;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+.right{
+	padding: 30px 120px;
+	margin:0;
+}
+.signText{
+	padding: 0;
+	margin: 10px 0;
+}
+.signDivs{
+	padding: 3vh 20px;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+.btn{
+	color:white;
+	background-color: rgba(255, 255, 255, 0.25);
+}
+.title:active{
+	color: blue;
+	animation: filter-animation 5s infinite;
+}
+
+@keyframes filter-animation {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+
+	50% {
+		filter: hue-rotate(100deg);
+	}
+
+	100% {
+		filter: hue-rotate(0deg);
+	}
+}
+
+@keyframes easterEgg {
+	0%,100% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 100% 0;
+	}
+}
+/*------------------------------------------------*/
+
+
+
+/*------------//Mensagem boas vindas//------------*/
+.title{
+	font-family: 'Audiowide', cursive;
+}
+.msg{
+	font-family: 'Audiowide', cursive;
+	margin-top: 0;
+	margin-bottom: 5vh;
+	font-size: 25px;
+}
+#divTop{
+	border-radius: 8px 8px 0 0;
+	margin: 0;
+	padding-top: 15px;
+}
+#divBot{
+	border-radius: 0 0 8px 8px;
+	margin: 0;
+}
+/*------------------------------------------------*/
+
+
+
+/*---------//responsivness media queries//--------*/
+@media screen and (min-width: 1080px) and (max-width: 1920px){
+	.left{
+		padding: 30px 120px;
+		border-right: solid 3px rgba(255, 255, 255, 0.75);
+		font-size: 30px;
+	}
+	.right{
+		padding: 30px 120px;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	.left{
+		padding: 30px 50px;
+		border-right: solid 3px rgba(255, 255, 255, 0.75);
+	}
+	.right{
+		padding: 30px 50px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.left{
+		display: none;
+	}
+	.right{
+		padding: 30px 40px;
+	}
+}
+/*------------------------------------------------*/

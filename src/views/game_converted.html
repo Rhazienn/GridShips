@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="../assets/game.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="../assets/logo.svg">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"	integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+	<title>GAME</title>
+</head>
+
+<body>
+	<div class="row navbar">
+
+		<div class="col-2">
+			<img src="../assets/logo.svg" draggable="false" class="logoImg logo imgs" alt="Image">
+		</div>
+
+		<!--css macaco so muda o cursor com css inline não orgulho disso-->
+		<div class="col-3 action" style="cursor: pointer;" onclick="goBack()">
+			Voltar ao Menu!
+		</div>
+
+		<div class="col-5">
+
+		</div>
+
+		<div class="col-2 align-end">
+			<!--temp image-->
+			<img src="../assets/logo.svg" class="logoImg imgs" alt="Image">
+		</div>
+
+	</div>
+	<div class="all">
+
+
+		<!-- <div>
+			<image src="../assets/sword.png" draggable="false" class="vs logo">
+		</div> -->
+
+		<div class="container-fluid container-main">
+			<div class="game row">
+				<div class="container">
+					<div class="battleship-grid grid-user"></div>
+					<div class="battleship-grid grid-computer"></div>
+				</div>
+				
+				<div class="ships">
+					<div class="container row">
+						<div class="grid-display">
+							<div class="ship destroyer-container" draggable="true"><div id="destroyer-0"></div><div id="destroyer-1"></div></div>
+							<div class="ship submarine-container" draggable="true"><div id="submarine-0"></div><div id="submarine-1"></div><div id="submarine-2"></div></div>
+							<div class="ship cruiser-container" draggable="true"><div id="cruiser-0"></div><div id="cruiser-1"></div><div id="cruiser-2"></div></div>
+							<div class="ship battleship-container" draggable="true"><div id="battleship-0"></div><div id="battleship-1"></div><div id="battleship-2"></div><div id="battleship-3"></div></div>
+							<div class="ship carrier-container" draggable="true"><div id="carrier-0"></div><div id="carrier-1"></div><div id="carrier-2"></div><div id="carrier-3"></div><div id="carrier-4"></div></div>
+						</div>
+					</div>
+
+					<div class="container hidden-info">
+						<div class="setup-buttons" id="setup-buttons">
+							<button id="start" class="btn">Start Game</button>
+							<button id="rotate" class="btn">Rotate Your Ships</button>
+						</div>
+						<h3 id="whose-go" class="info-text">Your Go</h3>
+						<h3 id="info" class="info-text"></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="../assets/game.js" charset="utf-8">
+	let gameMode = 'singlePlayer'
+</script>
+</html>
